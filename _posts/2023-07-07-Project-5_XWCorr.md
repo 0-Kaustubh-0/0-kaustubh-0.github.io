@@ -28,7 +28,7 @@ If you are here you probably understand how any time-series is made up of severa
 
 For example, if there is a time-series, ```x```, its continuous-wavelet-transform (CWT) is given by: 
 
-<img src="https://latex.codecogs.com/svg.image?{\color{Emerald}X_{\omega}=\frac{1}{\left|a\right|^{\frac{1}{2}}}*\int_{-\infty}^{\infty}x(t)\overline{\psi}(\frac{t-b}{a})dt}" title="{\color{Red}X_{\omega}=\frac{1}{\left|a\right|^{\frac{1}{2}}}*\int_{-\infty}^{\infty}x(t)\overline{\psi}(\frac{t-b}{a})dt}" />
+<img alt="Equation for the wavelet transform" src="https://latex.codecogs.com/svg.image?{\color{Emerald}X_{\omega}=\frac{1}{\left|a\right|^{\frac{1}{2}}}*\int_{-\infty}^{\infty}x(t)\overline{\psi}(\frac{t-b}{a})dt}" title="{\color{Red}X_{\omega}=\frac{1}{\left|a\right|^{\frac{1}{2}}}*\int_{-\infty}^{\infty}x(t)\overline{\psi}(\frac{t-b}{a})dt}" />
 
 This computation can be acieved within MATLAB, using a one-line function in the [Wavelet toolbox][7], by additionally specifying the sampling frequency ```fs``` for ```x```: 
 ```matlab
