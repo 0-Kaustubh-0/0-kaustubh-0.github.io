@@ -84,6 +84,7 @@ INSscore = mean(XCorr(:,bwLowIdx: bwHighIdx), 2);
 ## Applying cross-wavelet to extract INS coherence data between Musicians and Listeners
 
 From a sample fNIRS dataset of 3 Musicians(Mn) and 3 Listeners(Ln), we are able to investigate the INS between the Musician-Listner combinations as well as Listener-Listener combinations (If we choose to compute auto-correlation and inverse correlation, we get 6*6 = 36 combinations). Observe the cross-wavelet coherence plot I created below ustilizng ```imagesc``` (why not  plot? : due to very high sample density) and ```pcolor```. This creates a heatmap with 
+
 * Time on the x-axis 
 * Frequency on the y-axis
 
