@@ -167,7 +167,7 @@ Pertaining to Oceanic-buoys, if the location of the buoys is known (since they a
 
 ### Frequency domain data
 
-To understand ocean wave properties, accelerometer data is transformed into the time-frequency domain using techniques such as FFT as mentioned above. These methods reveal the most prominent frequency and intensity of waves over the whole period of data acquisition. Another method such as the STFT (Short Time Fourier Transform) can be utilized towards identifying the how the frequency or the intensity of waves *changed* over-time, hence additional time resolution can be achieved. My ```matlab``` code for STFT can be found [here][]. You may also find this ```python``` method much easier and direct:  
+To understand ocean wave properties, accelerometer data is transformed into the time-frequency domain using techniques such as FFT as mentioned above. These methods reveal the most prominent frequency and intensity of waves over the whole period of data acquisition. Another method such as the STFT (Short Time Fourier Transform) can be utilized towards identifying the how the frequency or the intensity of waves *changed* over-time, hence additional time resolution can be achieved. My ```matlab``` code for STFT can be found [here][13]. You may also find this ```python``` method much easier and direct:  
 
 ```python
 # Function for Short-Time Fourier Transform (STFT) in Python
@@ -195,7 +195,7 @@ Looking at the FFT data produced, we are able to identify some primary features:
 ## Conclusion
 Understanding accelerometer data from multiple oceanic buoys and identifying coherence between waves and wave movement speed, direction, and intensity involves a combination of accelerometer theory, wave theory, and signal processing techniques. The process of data collection, preprocessing, time-frequency analysis, and coherence analysis allows us to extract meaningful information from the data, aiding in the understanding of ocean wave behavior. 
 
-> Other `matlab` or `Python` code relevant to this project can be found in [my git repos][13] for computing the f
+> Other `matlab` or `Python` code relevant to this project can be found in [my git repos][14] for computing the f
 
 * Filtering
 * Fourier transforming
@@ -212,8 +212,8 @@ Understanding accelerometer data from multiple oceanic buoys and identifying coh
 [7]: https://nctr.pmel.noaa.gov/Pdf/brochures/dart4G_Brochure.pdf
 [8]: https://www.electronics-tutorials.ws/filter/filter_2.html
 [9]: https://en.wikipedia.org//wiki/Butterworth_filter
-[10]: Link to article: Filter design guide
-
+[10]:
 [11]: http://www.labbookpages.co.uk/audio/beamforming/delaySum.html
 [12]: https://signalprocessingsociety.org/publications-resources/blog/echo-time-tracing-evolution-beamforming-algorithms
-[13]: https://github.com/0-Kaustubh-0
+[13]:
+[14]: https://github.com/0-Kaustubh-0
