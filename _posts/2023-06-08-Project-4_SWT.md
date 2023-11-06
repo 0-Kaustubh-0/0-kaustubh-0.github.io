@@ -226,5 +226,5 @@ The Stationary Wavelet Transform (SWT) is a valuable tool for improving the anal
 [3]: https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/iet-spr.2020.0104
 [4]: https://en.wikipedia.org/wiki/Discrete_wavelet_transform
 [5]: https://pywavelets.readthedocs.io/en/latest/index.html
-[6]: Git repo for SWT ECG denoising
+[6]: 
 [7]: https://ecgwaves.com/topic/cg-normal-p-wave-qrs-complex-st-segment-t-wave-j-point/
