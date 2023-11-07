@@ -22,7 +22,7 @@ published: true
 
 ### What are Wavelet Transforms?
 
-If you are here you probably understand how any time-series is made up of several superimposing frequency components. [Joseph Fourier][1] brilliant posited in the 18th century that all time series or functions could be decomposed into a series sum of sines and cosines, a breakthrough which (with some additional rules applied) led to the developement of the **[Fourier Transform][2]**! This tool can be used to decompose any continuous *signal* that we record, into it's consittuent frequency components (sum of Sines and Cosines centered at a frequency with an associated 'weight'/ 'coefficient') ***over the whole signal*** (we'll come back to this...).
+If you are here you probably understand how any time-series is made up of several superimposing frequency components. [Joseph Fourier][1] brilliantly posited in the 18th century that all time series or functions could be decomposed into a series sum of sines and cosines, a breakthrough which (with some additional rules applied) led to the developement of the **[Fourier Transform][2]**! This tool can be used to decompose any continuous *signal* that we record, into it's consittuent frequency components (sum of Sines and Cosines with associated 'weights'/ 'coefficients') ***over the whole signal*** (we'll come back to this...).
 
 **[Wavelet Transform][3]** is a technique developed by [Ingrid Daubchies][4] which does the same thing but with an additional, most useful functionality: it is able to decompose the signal into it's constituent frequency components with time-resolution! i.e. not only can you tell which frequency components arose in the signal, you can tell **when** they arose. This is highly useful in determining spectral events as a function of time, in the field of Biomedical Signalling, Geology, Astronomy etc. 
 
@@ -31,10 +31,13 @@ For example, if there is a time-series, ```x```, its continuous-wavelet-transfor
 <img alt="Equation for the wavelet transform" src="https://latex.codecogs.com/svg.image?{\color{Emerald}X_{\omega}=\frac{1}{\left|a\right|^{\frac{1}{2}}}*\int_{-\infty}^{\infty}x(t)\overline{\psi}(\frac{t-b}{a})dt}" title="{\color{Red}X_{\omega}=\frac{1}{\left|a\right|^{\frac{1}{2}}}*\int_{-\infty}^{\infty}x(t)\overline{\psi}(\frac{t-b}{a})dt}" />
 
 This computation can be acieved within MATLAB, using a one-line function in the [Wavelet toolbox][7], by additionally specifying the sampling frequency ```fs``` for ```x```: 
+
 ```matlab
 [cwt_X, fVec] = cwt(x, fs);
 ```
+
 which provides **wavelet coefficients** ```cwtX``` and the associated **frequency vector** ```fVec``` as the output. We should keep in mind that ```cwtX``` is real-valued and hence contains vital phase information as well. The phase information can be utilized in fields such as geology to contour bandwidths with common pahse and identify delays between different cyclical frequency components.
+
 
 ### Introduction to Cross Wavelet Analysis
 
@@ -52,14 +55,17 @@ XCorr = cwt_X1*conj(cwt_X2);
 XCorr = wcoherence(x1,x2);
 ```
 where ```XCorr``` posses the **cross-correlation values**. I personally prefer the 1st method as the it allows us the opportunity to:
+
 * Inspect the indivdual spectral decompositions ```cwt_X1, cwt_X2``` and
 * Do a inverse cross-wavelet analysis, such as   `XCorr_inverse = (cwt_X2)*conj(cwt_X1);`  which allows us to further inspect which signal may have influenced the other, by employing the [Granger-Causality][8] test.
 
 **Tip**: Plotting ```(XCorr, fVec)``` may be an issue with ```plot()```, you may want to use ```imagesc()``` instead. 
 
+
 ### What is fNIRS?
 
 [fNIRS][5] or *functional Near-InfraRed Spectroscopy*, is a non-invasive optical imaging technique using absorption spectra in the range of 700 nm- 1 &micro;m to determine bloox oxygenation differences. Changing heamoglobin concentrations correlate with brain activity and can be used to monitor the same in the brain regions under the sensor closest to the skull.    
+
 
 ### How do we infer Inter-Neuronal-Synchronization(INS) from Cross-Wavelet Tansform  
 
@@ -80,6 +86,7 @@ BOI = [bwLow bwHigh];
 % Calculate INS between bandwidth of interest
 INSscore = mean(XCorr(:,bwLowIdx: bwHighIdx), 2);
 ```
+
 
 ## Applying cross-wavelet to extract INS coherence data between Musicians and Listeners
 
@@ -112,7 +119,6 @@ We observe:
 * There is a high coherence between some ML combinations and LL combinations
 * There is a low coherence observed for MM combinations (as they were separate instances of fNIRS recordings)
 * The INS is not stable and may fluctuate either way over-time (which may depend on the type of music, listener's attention and receptivity or environmental acoustics)
-
 
 Looking at the data, one may find it to be skewed (since the bandwidth of interest selectively filters out frequencies that exhibit low cross-correlation, it also cannot filter out low correlation within the bandwith of interest at random time intervals), hence to remove skewnessm, we can ***Log transform*** the mean data.
 
@@ -199,9 +205,6 @@ end
 % h = gctest(meanNarrowbandCoherence(1,:), meanNarrowbandCoherenceReverse(1,:));
 ```
 
-
-
-.
 
 ## Takeaways:
 

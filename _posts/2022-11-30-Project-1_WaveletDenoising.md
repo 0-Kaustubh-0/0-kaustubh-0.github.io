@@ -11,7 +11,7 @@ published: true
 
 # Introduction
 
-Wavelet denoising arises from the [Wavelet Transform][1] specifically the [Discrete Wavelet Trasfor (DWT)][1]. DWT can be utilized for:
+Wavelet denoising arises from the [Wavelet Transform][1], specifically the [Discrete Wavelet Trasform (DWT)][1]. DWT can be utilized for:
 
 * Filtering
 * Frequency specific feature extraction
