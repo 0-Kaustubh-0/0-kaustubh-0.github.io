@@ -206,7 +206,7 @@ end
 ```
 
 
-## Takeaways:
+## Takeaways
 
 * What is cross-wavelet correlation
 * How to apply it using MATLAB and infer correlation results

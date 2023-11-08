@@ -221,6 +221,12 @@ Calculating the Power Spectral Density and SNR
 
 The Stationary Wavelet Transform (SWT) is a valuable tool for improving the analysis of ECG signals by reducing noise while preserving essential diagnostic information. In this article, we introduced ECG analysis metrics, discussed the benefits of ECG denoising using SWT, and provided a Python project with code snippets. The inclusion of Power Spectral Density (PSD) and Signal-to-Noise Ratio (SNR) comparisons highlights the effectiveness of this methodology. Accurate ECG analysis is vital for early diagnosis and appropriate medical intervention, making denoising techniques like SWT invaluable in clinical settings.
 
+## Takeaways
+
+* What is Stationary Wavelet Transform and how is it different from Discrete Wavelet Transform.
+* How to apply SWT towards denoising applications.
+* An application of Oceanic Buoy data towards identifying and analyzing Oceanographic metrics. 
+
 [1]: https://en.wikipedia.org/wiki/Electrocardiography
 [2]: https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/iet-spr.2020.0104
 [3]: https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/iet-spr.2020.0104

@@ -150,6 +150,12 @@ denoised_signal = pywt.waverec(denoised_coeffs, wavelet)
 
 Wavelet denoising is a valuable tool for enhancing the quality of signals and images by removing unwanted noise while preserving important features. This guide demonstrates how to perform wavelet denoising in both MATLAB and Python using both directly available tools and . Depending on your preference and application, you can choose the platform that best suits your needs and utilize the appropriate functions and libraries for effective denoising.
 
+## Takeaways
+
+* Methodologies to employ for denoising using wavelet transforms.
+* Selecting optimal parameters for conducting a denoising analysis on your time-series data.
+* Developing denoising techniques in both `MATLAB` and `Python`.
+
 
 [1]: https://en.wikipedia.org/wiki/Wavelet_transform
 [2]: https://en.wikipedia.org/wiki/Discrete_wavelet_transform

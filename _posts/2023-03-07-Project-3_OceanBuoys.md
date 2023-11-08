@@ -203,6 +203,12 @@ Understanding accelerometer data from multiple oceanic buoys and identifying coh
 * Coherence 
 * Visualizations
 
+## Takeaways
+
+* Filtering and extraction phase and speectral information from a time-series data in Python.
+* An application of Oceanic Buoy data towards identifying and analyzing Oceanographic metrics. 
+
+
 [1]: https://en.wikipedia.org/wiki/Buoy
 [2]: https://msmocean.com/en/oceanographic-buoys/
 [3]: https://en.wikipedia.org/wiki/Joseph_Fourier
