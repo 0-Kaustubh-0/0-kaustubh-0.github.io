@@ -1,17 +1,16 @@
 # Overview
 
-This is my respository whic is currently hosting my [portfolio website][1] using Github pages. 
+This respository is currently hosting my [portfolio website][1] using Github pages. 
 
-Currently the website only lists my project portfolio in the form of articles that link back to other repositories with OSS code made available under the CC license.
+At the moment, this website only lists my additonal projects as a portfolio in the form of articles, most of which link back to other repositories with OSS code made available under the CC license under this github account.
 
-I have utilized the following tools to creat this website:
+I have utilized the following tools to create this website:
 
-* [Building] Jekyll
+* [Building] Jekyll - Ruby based tool
 * [Building, Deploying] Chirpy theme
 * [Hosting] Github Pages
 
-If you wish to start a github website using Jekyll, follow the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of
-the basic environment. [Git](https://git-scm.com/) also needs to be installed.
+If you wish to start a github website using Jekyll, follow the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of the basic environment. [Git](https://git-scm.com/) also needs to be installed.
 
 ## Documentation
 
