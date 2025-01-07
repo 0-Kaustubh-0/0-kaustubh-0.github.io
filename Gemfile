@@ -5,6 +5,7 @@ source "https://rubygems.org"
 gem "rollbar"
 gem "logger"
 gem "ostruct"
+gem "csv"
 
 gem "jekyll-theme-chirpy", "~> 6.2", ">= 6.2.2"
 
