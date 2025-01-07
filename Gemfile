@@ -6,6 +6,7 @@ gem "rollbar"
 gem "logger"
 gem "ostruct"
 gem "csv"
+gem "base64"
 
 gem "jekyll-theme-chirpy", "~> 6.2", ">= 6.2.2"
 
