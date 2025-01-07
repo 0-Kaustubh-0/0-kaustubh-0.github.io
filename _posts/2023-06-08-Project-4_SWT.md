@@ -224,8 +224,7 @@ The Stationary Wavelet Transform (SWT) is a valuable tool for improving the anal
 ## Takeaways
 
 * What is Stationary Wavelet Transform and how is it different from Discrete Wavelet Transform.
-* How to apply SWT towards denoising applications.
-* An application of Oceanic Buoy data towards identifying and analyzing Oceanographic metrics. 
+* Cardio-vascular health indicators that are identifiable from Electro-Cardiogram data.
 
 [1]: https://en.wikipedia.org/wiki/Electrocardiography
 [2]: https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/iet-spr.2020.0104
